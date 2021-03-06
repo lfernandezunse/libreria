@@ -5,6 +5,9 @@
  */
 package libreria;
 
+import estructuras.ArbolBinario;
+import estructuras.NodoCuento;
+
 
 /**
  *
@@ -16,6 +19,7 @@ public class Libreria {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
+        ArbolBinario arbol = new ArbolBinario();
         menu();
         System.out.println("Ingrese una opción");
         int opc = User.intInput();
@@ -100,6 +104,7 @@ public class Libreria {
     }   
     
     public static void agregarCuento(){
+        NodoCuento cuento = new NodoCuento();
         System.out.println("Se va a agregar un libro de cuentos");  
         System.out.println("-----------------------------------");
         System.out.println("Ingrese el nombre del libro");
