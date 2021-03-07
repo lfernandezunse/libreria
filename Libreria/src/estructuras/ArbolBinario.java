@@ -39,5 +39,9 @@ public class ArbolBinario {
             insertarR(p.getPi(), dato);
         }
     }
+    
+    public void visualizar(){
+         
+    }
 
 }
