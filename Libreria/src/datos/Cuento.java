@@ -12,6 +12,10 @@ package datos;
 public class Cuento extends Libro{
     private int tipo;
     private String autor;
+    
+    public Cuento(String titulo, String editorial, float precio, int edad, int stock, int tipo, String autor){
+        
+    }
 
     public int getTipo() {
         return tipo;
@@ -43,5 +47,6 @@ public class Cuento extends Libro{
         String titulo = getTitulo();
         float precio = getPrecio();
         int stock = getStock();
+        
     }
 }

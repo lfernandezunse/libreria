@@ -10,14 +10,28 @@ package datos;
  * @author Lucas
  */
 public class Libro {
-    private int ID;
+    private static int ID = 0;
     private String titulo;
     private String editorial;
     private float precio;
     private int edad; //Esta es la edad a partir de la cual se recomienda leer este libro
     private int stock;
 
-    public Libro() {
+    
+    public Libro(){
+        this.titulo = null;
+        this.editorial = null;
+        this.precio = 0;
+        this.edad = 0;
+        this.stock = 0;
+    }
+    public Libro(String titulo, String editorial, float precio, int edad, int stock) {
+        this.ID++;
+        this.titulo = titulo;
+        this.editorial = editorial;
+        this.precio = precio;
+        this.edad = edad;
+        this.stock = stock;
     }
 
     public int getID() {
@@ -31,7 +45,7 @@ public class Libro {
     public String getTitulo() {
         return titulo;
     }
-
+    
     public void setTitulo(String titulo) {
         this.titulo = titulo;
     }

@@ -9,7 +9,7 @@ package datos;
  *
  * @author Lucas
  */
-public class Coloreo {
+public class Coloreo extends Libro{
     private int dificultad;
 
     public Coloreo() {

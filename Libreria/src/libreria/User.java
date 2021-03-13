@@ -40,6 +40,12 @@ public class User {
         return entero;
     }
     
+    public static float floatInput(){
+        Scanner inp = new Scanner(System.in);
+        float flotante = inp.nextFloat();
+        return flotante;
+    }
+    
     public static void printText(String msg){
         System.out.println(msg);
     }

@@ -12,7 +12,7 @@ import datos.Libro;
  *
  * @author LFern
  */
-public class NodoColoreo extends Libro {
+public class NodoColoreo {
     private Coloreo info;
     private NodoColoreo ps;
     

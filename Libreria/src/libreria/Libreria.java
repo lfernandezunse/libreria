@@ -5,8 +5,8 @@
  */
 package libreria;
 
+import datos.Cuento;
 import estructuras.ArbolBinario;
-import estructuras.NodoCuento;
 
 
 /**
@@ -45,10 +45,6 @@ public class Libreria {
                 break;
             }
         }
-        
-        
-        
-        
     }
     public static void menu(){
             System.out.println("Menú de sección infantil");
@@ -89,11 +85,9 @@ public class Libreria {
             }     
             else{
                 intOpc = 0;
-            }
-            
+            }            
         }
-        System.out.println("Saliendo...");
-        
+        System.out.println("Saliendo...");        
     }
     
     public static void opcionesLibros(){
@@ -104,25 +98,31 @@ public class Libreria {
     }   
     
     public static void agregarCuento(){
-        NodoCuento cuento = new NodoCuento();
+        Cuento cuento = new Cuento();
         System.out.println("Se va a agregar un libro de cuentos");  
         System.out.println("-----------------------------------");
-        System.out.println("Ingrese el nombre del libro");
+        System.out.println("Ingrese el titulo del libro");
         String nombreLibro = User.textInput();
         while (nombreLibro.equals("")){
             System.out.println("El libro debe tener un nombre");
-            System.out.println("Ingrese el nombre del libro");
-            nombreLibro = User.textInput();
-            
-        }
+            System.out.println("Ingrese el titulo del libro");
+            nombreLibro = User.textInput();            
+        }        
+        System.out.println("Ingrese la editorial del libro");
+        String editorial = User.textInput();
+        System.out.println("Ingrese el precio unitario del libro");
+        float precio = User.floatInput();
     }
      
     public static void buscarLibro(){
         System.out.println("Se va buscar un libro");
+        System.out.println("¿Que tipo de libro desea buscar?");
+        
     }
     
     public static void eliminarLibro(){
-        System.out.println("Se va a eliminar un libro");        
+        System.out.println("Se va a eliminar un libro");      
+        System.out.println("¿Que tipo de libro desea eliminar?");  
     }
     
     public static void verLibrosCuentos(){        
